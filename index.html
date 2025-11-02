@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portofolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -39,6 +39,7 @@
 <section id="profile">
     <div class="section__pic-container">
         <img src="./assets/Profile.png" alt="Profile Picture">
+    </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Syed Junaid K</h1>
@@ -52,11 +53,10 @@
                 <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/Arachno-Sapien'">
             </div>
         </div>
-    </div>
 </section>
-<section id="About">
+<section id="about">
     <p class="section__text__p1">Hello, Konnichiwa?</p>
-    <h1 class="title">About Me, Orewa Des</h1>
+    <h1 class="title">About Me</h1>
     <div class="section-container">
         <div class="section__pic-container">
             <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
@@ -219,7 +219,7 @@
             </div>
             <h2 class="certificates-sub-title project-title">Elysium</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Arachno-Sapien/ELYSIUM.git'">
+              <button class="btn btn-color-2 project-btn" href="https://github.com/Arachno-Sapien/ELYSIUM.git" target="_blank" rel="noopener noreferrer">
                 Github
               </button>
             </div>
@@ -230,7 +230,7 @@
             </div>
             <h2 class="certificates-sub-title project-title">Video Streaming</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Arachno-Sapien/Python-Project.git'">
+              <button class="btn btn-color-2 project-btn" href="https://github.com/Arachno-Sapien/Python-Project.git" target="_blank" rel="noopener noreferrer">
                 Github
               </button>
             </div>
@@ -238,6 +238,7 @@
         </div>
       </div>
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -265,6 +266,6 @@
       </nav>
       <p>Copyright &#169; 2025 Arachno-Sapien. All Rights Reserved.</p>
     </footer>
- <script src="script.js"></script> 
+    <script src="script.js" defer></script>
 </body>
 </html>
