@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+ <nav id="desktop-nav">
+    <div class="logo"><img src="./assets/image.png" width="100" height="100" alt="SJK Profile Picture"></div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+ </nav>
+ <nav id="hamburger-nav">
+    <div class="logo">SJK</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+    </div>
+</nav>
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/Profile.png" alt="Profile Picture">
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Syed Junaid K</h1>
+            <p class="section__text__p2">Trying to do better.</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">View/Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile"  class="icon" onclick="location.href='https://www.linkedin.com/in/syed-junaid-khalander-9755981b0/' ">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/Arachno-Sapien'">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="About">
+    <p class="section__text__p1">Hello, Konnichiwa?</p>
+    <h1 class="title">About Me, Orewa Des</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/certification.png" alt="Certificates icon" class="icon"/>
+                    <h3>Certificates</h3>
+                    <p>📜 Workshops & Courses<br>
+                        🔬 Technical Project<br>
+                        🏆 Hackathons<br>
+                        🗣️ Soft Skills Certifications<br>
+                        🎭 Cultural Engagement
+                    </p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                    <h3>Education</h3>
+                    <p>Pursuing B.E.- Bachelors in Engineering in Information Science & Engineering<br>
+                       12th PUC - 92%<br>
+                       10th ICSE - 88%            
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certificates'">
+</section>
+<section id="certificates">
+    <p class="section__text__p1">View My Certificates</p>
+    <h1 class="title">Certifications</h1>
+    <div class="certificates-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="certificates-sub-title">Workshops & Courses</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Artificial Intelligence & Machine Learning</h3>
+                            <p>(IISc, Oct 2025)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Mastering GenAI</h3>
+                            <p>(Vital Skills x IISc, Oct 2025)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Internet of Things</h3>
+                            <p>(Infosys Springboard, Jun 2025)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Python</h3>
+                            <p>(Infosys Springboard, Jun 2025)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>MATLAB - Beginners</h3>
+                            <p>(Infosys Springboard, Dec 2024)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>C Programming</h3>
+                            <p>(Infosys Springboard, Dec 2024)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Organic Solar Cells - Theory and Practice</h3>
+                            <p>(DTU - Denmark Technical University, Dec 2024)</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="certificates-sub-title">Hackathons</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>AIML Hackathon</h3>
+                            <p>(IISc, Oct 2025)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Gen AI Hackathon</h3>
+                            <p>(IISc, Oct 2025)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Algo-Rave Hackathon</h3>
+                            <p>(DSATM, Apr 2025)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>National Level Tech Fest: ALGO-RYTHM-2024</h3>
+                            <p>(DSATM, Dec 2024)</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="certificates-sub-title">Soft Skills & Cultural</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Communication Skills</h3>
+                            <p>(CIL, DSATM, May 2025)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Personal Effectiveness</h3>
+                            <p>(CIL, DSATM, May 2025)</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Certificates icon" class="icon">
+                        <div>
+                            <h3>Antaragni Debate Participation</h3>
+                            <p>(DSATM, Nov 2024)</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+</section>
+<section id="projects">
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="certificates-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+            </div>
+            <h2 class="certificates-sub-title project-title">Elysium</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Arachno-Sapien/ELYSIUM.git'">
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+            </div>
+            <h2 class="certificates-sub-title project-title">Video Streaming</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Arachno-Sapien/Python-Project.git'">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:syed.junaid0604@gmail.com">syed.junaid0604@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/syed-junaid-khalander-9755981b0/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Arachno-Sapien. All Rights Reserved.</p>
+    </footer>
+ <script src="script.js"></script> 
+</body>
+</html>
