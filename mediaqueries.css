@@ -26,7 +26,7 @@
     {
       display: flex;
     }
-  #certificates,.certificates-details-container
+  #certifications,.certificates-details-container
   {
     margin-top: 2rem;
   }
@@ -110,6 +110,13 @@
   {
     padding: 0.55rem 0.85rem;
     font-size: 0.85rem;
+  }
+  .scroll-top
+  {
+    right: 1rem;
+    bottom: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .nav-links 
   {
