@@ -129,6 +129,11 @@ button:focus-visible {
 @supports (animation-timeline: scroll()) {
   .scroll-progress {
     animation: scroll-progress linear;
+    /* The animation shorthand resets animation-duration to 0s when it's
+       omitted, which stops a scroll-timeline animation from ever
+       progressing even in browsers that support it. auto ties the
+       duration to the full length of the scroll timeline instead. */
+    animation-duration: auto;
     animation-timeline: scroll(root block);
   }
 }
