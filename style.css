@@ -110,8 +110,8 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
-/* Page Chrome. z-index scale: certificate lightbox 300, click-spark 200,
-   scroll progress 100, back-to-top 90. */
+/* Page Chrome. z-index scale: nav dropdown menu 400, certificate lightbox
+   300, click-spark 200, scroll progress 100, back-to-top 90. */
 .scroll-progress {
   position: fixed;
   top: 0;
@@ -414,6 +414,11 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
+  /* Without this, the hero's z-index: 1 picture/text (set to clear the
+     background hero-grid texture) paints over the open dropdown, since
+     z-index: auto here otherwise loses to any positive value elsewhere in
+     the same stacking context - regardless of DOM order. */
+  z-index: 400;
   background-color: var(--menu-bg);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
