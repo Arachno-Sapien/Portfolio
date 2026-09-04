@@ -73,6 +73,7 @@
  </nav>
 
  <section id="profile">
+     <div class="hero-grid" aria-hidden="true"></div>
      <div class="section__pic-container">
          <img src="./assets/Profile.png" alt="Syed Junaid Khalander profile picture">
      </div>
@@ -109,6 +110,25 @@
          <div class="details-container">
              <h3>Contact Snapshot</h3>
              <p>Bengaluru, Karnataka, India<br>syed.junaid0604@gmail.com<br>+91 7204983797</p>
+         </div>
+     </div>
+     <div class="details-container cert-carousel" data-cert-carousel role="group" aria-roledescription="carousel" aria-label="Certificate gallery">
+         <h3>Certificates</h3>
+         <div class="cert-carousel__viewport" data-cert-viewport tabindex="0" role="group" aria-label="Certificate slides, use arrow keys to browse">
+             <div class="cert-carousel__stage" data-cert-stage></div>
+             <button type="button" class="cert-carousel__arrow cert-carousel__arrow--prev" data-cert-prev aria-label="Previous certificate">
+                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+             </button>
+             <button type="button" class="cert-carousel__arrow cert-carousel__arrow--next" data-cert-next aria-label="Next certificate">
+                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+             </button>
+         </div>
+         <div class="cert-carousel__preview" data-cert-preview aria-hidden="true">
+             <img class="cert-carousel__preview-img" data-cert-preview-img alt="">
+         </div>
+         <div class="cert-carousel__meta">
+             <p class="cert-carousel__title" data-cert-title></p>
+             <p class="cert-carousel__count" data-cert-count></p>
          </div>
      </div>
      <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'">
@@ -324,6 +344,16 @@
  <button class="scroll-top" type="button" data-scroll-top aria-label="Back to top">
        <span aria-hidden="true">&uarr;</span>
  </button>
+ <div class="cert-lightbox" data-cert-lightbox hidden>
+     <div class="cert-lightbox__backdrop" data-cert-lightbox-backdrop></div>
+     <figure class="cert-lightbox__panel" role="dialog" aria-modal="true" aria-label="Certificate, full view">
+         <img class="cert-lightbox__img" data-cert-lightbox-img alt="">
+         <figcaption class="cert-lightbox__caption" data-cert-lightbox-caption></figcaption>
+         <button type="button" class="cert-lightbox__close" data-cert-lightbox-close aria-label="Close certificate view">
+             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+         </button>
+     </figure>
+ </div>
  <script src="script.js" defer></script>
 </body>
 </html>

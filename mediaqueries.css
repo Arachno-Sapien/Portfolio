@@ -118,6 +118,15 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+  .cert-carousel__arrow
+  {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .cert-carousel__viewport
+  {
+    height: 230px;
+  }
   .nav-links 
   {
     flex-direction: column;

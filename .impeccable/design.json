@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-04T00:00:00.000Z",
+  "title": "Design System: Syed Junaid Khalander — Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "amber-signal": {
+        "role": "primary",
+        "displayName": "Amber Signal",
+        "canonical": "#f5b971",
+        "tonalRamp": ["#3b2b19", "#6c5130", "#9d7647", "#ce9b5f", "#f5b971", "#f8cb94", "#fbddb7", "#fdedd5"]
+      },
+      "night-navy": {
+        "role": "neutral",
+        "displayName": "Deep Space Navy",
+        "canonical": "#0b0f19",
+        "tonalRamp": ["#05070d", "#0b0f19", "#111827", "#1c2536", "#2c3650", "#4a5674", "#7c88a3", "#c5cedd"]
+      },
+      "console-white": {
+        "role": "neutral",
+        "displayName": "Console White",
+        "canonical": "#f8fafc"
+      },
+      "slate-mist": {
+        "role": "neutral",
+        "displayName": "Slate Mist",
+        "canonical": "#c5cedd"
+      },
+      "alert-red": {
+        "role": "secondary",
+        "displayName": "Alert Red",
+        "canonical": "#ef4444"
+      },
+      "rust-signal": {
+        "role": "primary",
+        "displayName": "Rust Signal (light theme)",
+        "canonical": "#9a3412",
+        "tonalRamp": ["#1f0a03", "#3d1406", "#5c1e09", "#7a280c", "#9a3412", "#c2410c", "#e07a3d", "#f2b98f"]
+      },
+      "cool-paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper (light theme)",
+        "canonical": "#f5f7fb"
+      },
+      "ink-navy": {
+        "role": "neutral",
+        "displayName": "Ink Navy (light theme text / dark theme button text)",
+        "canonical": "#0f172a"
+      },
+      "ember-orange": {
+        "role": "secondary",
+        "displayName": "Ember Orange (light theme)",
+        "canonical": "#d97706"
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Section h1 titles only, one per section." },
+      "headline": { "displayName": "Headline", "purpose": "Hero subtitle and certificate sub-titles." },
+      "body": { "displayName": "Body", "purpose": "Paragraph copy; muted-text colored." },
+      "label": { "displayName": "Label", "purpose": "Skill/project tag pills and nav links." }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 16px 36px rgba(0, 0, 0, 0.25)", "purpose": "Cards and containers at rest." },
+      { "name": "pill-lift", "value": "0 12px 30px rgba(0, 0, 0, 0.25)", "purpose": "Theme toggle, scroll-to-top." },
+      { "name": "button-lift", "value": "0 10px 24px rgba(0, 0, 0, 0.25)", "purpose": "All .btn elements." },
+      { "name": "menu-lift", "value": "0 20px 40px rgba(0, 0, 0, 0.25)", "purpose": "Hamburger dropdown menu." }
+    ],
+    "motion": [
+      { "name": "reveal-ease", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Section fade-up on scroll into view, 600ms." },
+      { "name": "interaction-ease", "value": "ease", "purpose": "Hover/focus transitions on links, buttons, theme toggle, 300ms." }
+    ],
+    "breakpoints": [
+      { "name": "nav-collapse", "value": "1200px" },
+      { "name": "compact", "value": "1400px" },
+      { "name": "mobile", "value": "600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "High-contrast inverted fill; used for the main CTA and every project 'View code' link.",
+      "html": "<button class=\"ds-btn-primary\">Contact Me</button>",
+      "css": ".ds-btn-primary { font-weight: 600; padding: 1rem 1.25rem; border-radius: 2rem; border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 10px 24px rgba(0,0,0,0.25); background: #f8fafc; color: #0f172a; cursor: pointer; transition: all 300ms ease; } .ds-btn-primary:hover { filter: brightness(1.05); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #f5b971; outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "The only place the secondary hue (Alert Red) appears; used solely for 'View Resume'.",
+      "html": "<button class=\"ds-btn-secondary\">View Resume</button>",
+      "css": ".ds-btn-secondary { font-weight: 600; padding: 1rem 1.25rem; border-radius: 2rem; border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 10px 24px rgba(0,0,0,0.25); background: #ef4444; color: #ffffff; cursor: pointer; transition: all 300ms ease; } .ds-btn-secondary:hover { filter: brightness(1.05); transform: translateY(-1px); } .ds-btn-secondary:focus-visible { outline: 2px solid #f5b971; outline-offset: 3px; }"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Static informational tag; skills and project tech tags. No selected/active state.",
+      "html": "<span class=\"ds-chip\">Python</span>",
+      "css": ".ds-chip { border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.03); color: #f8fafc; border-radius: 999px; padding: 0.45rem 0.75rem; font-size: 0.92rem; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "The primary content container: genuinely frosted glass (backdrop-filter blur) over the gradient field, center-aligned.",
+      "html": "<div class=\"ds-card\"><h3>Current Focus</h3><p>Engineering student focused on building usable software, smart systems, and project-based solutions.</p></div>",
+      "css": ".ds-card { padding: 1.5rem; background: rgba(15,19,31,0.7); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); border-radius: 2rem; border: 1px solid rgba(255,255,255,0.14); text-align: center; box-shadow: 0 16px 36px rgba(0,0,0,0.25); } .ds-card h3 { margin-bottom: 0.5rem; color: #f8fafc; } .ds-card p { color: #c5cedd; line-height: 1.6; }"
+    },
+    {
+      "name": "Theme Toggle",
+      "kind": "nav",
+      "refersTo": "theme-toggle",
+      "description": "Signature control present in both desktop and mobile nav; label swaps ☾ Dark / ☀ Light.",
+      "html": "<button class=\"ds-theme-toggle\">☾ Dark</button>",
+      "css": ".ds-theme-toggle { border: 1px solid rgba(255,255,255,0.14); background: rgba(15,19,31,0.92); color: #f8fafc; border-radius: 999px; padding: 0.7rem 1rem; font-weight: 600; font-size: 0.95rem; cursor: pointer; box-shadow: 0 12px 30px rgba(0,0,0,0.25); transition: all 300ms ease; } .ds-theme-toggle:hover { border-color: #f5b971; color: #f5b971; transform: translateY(-1px); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Console",
+    "overview": "The portfolio reads as an engineering instrument panel at night: a near-black navy field, lit by a single warm amber signal, housed in soft translucent glass panels. It is warm and approachable rather than clinical — the amber glow and rounded, pill-shaped controls keep the \"console\" from feeling sterile or corporate, while the restraint of the accent color keeps it precise rather than decorative. The system exists in full light-mode parity (near-white \"paper\" field, rust/burnt-orange signal), toggled by the visitor and persisted locally, so every token below has a confirmed pair in both themes.",
+    "keyCharacteristics": [
+      "Dark-first radial-gradient field (near-black navy) with a full light-theme pair, switched via [data-theme] and persisted in localStorage.",
+      "One warm accent color (amber in dark, rust/burnt-orange in light), used sparingly — hover states, links, and small labels only, never as a fill.",
+      "Translucent \"glass\" panel surfaces (rgba backgrounds) layered over the gradient field instead of opaque cards.",
+      "Heavily rounded, near-pill geometry everywhere — buttons, chips, nav toggle, cards.",
+      "Soft, diffuse ambient shadows; no hard/crisp drop shadows.",
+      "Tactile hover language: small upward lift (translateY(-1px)) plus a brightness bump, never a scale-pop."
+    ],
+    "rules": [
+      { "name": "The Rare Amber Rule", "body": "The accent color never fills a surface. It appears only on link hover/underline, the scroll-progress bar, card-meta labels, certificate sub-titles, focus-visible outlines, and hover states of the scroll-to-top button and theme toggle.", "section": "colors" },
+      { "name": "The Matched-Pair Rule", "body": "No color token exists in only one theme. Every dark-theme token has a confirmed light-theme counterpart with the same role.", "section": "colors" },
+      { "name": "The One-Family Rule", "body": "Every weight and size on the page comes from Poppins. Do not introduce a second family for emphasis — use size, weight, or the rare accent color instead.", "section": "typography" },
+      { "name": "The Glass-Console Rule", "body": "Depth comes from translucency and blur (backdrop-filter: blur(20px) saturate(160%)) over the gradient field, not from stacking opaque cards. Small persistent controls that must stay legible over busy content (scroll-to-top, theme toggle) stay fully opaque instead.", "section": "elevation" },
+      { "name": "The No-Hard-Shadow Rule", "body": "Every shadow is large-blur and low-opacity. A tight, dark, high-contrast shadow is off-system on sight.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the accent color rare — hover states, small labels, the progress bar. Never a background fill.",
+      "Do build every new surface as translucent glass over the gradient field before reaching for an opaque card.",
+      "Do use large-blur, low-opacity shadows only.",
+      "Do round generously — 2rem for panels/cards, 999px for pills/chips/toggles.",
+      "Do design every new color token as a matched dark/light pair before shipping either half.",
+      "Do keep hover feedback to a small lift (translateY(-1px)) plus a brightness bump."
+    ],
+    "donts": [
+      "Don't introduce a second typeface.",
+      "Don't add hard-edged, sharp-cornered elements.",
+      "Don't add crisp, high-contrast, or colored shadows.",
+      "Don't use the secondary hue (Alert Red / Ember Orange) anywhere but the 'View Resume' CTA."
+    ]
+  }
+}
