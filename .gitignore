@@ -1,0 +1,22 @@
+# Local AI/editor tooling - not needed to build or serve this static site
+.claude/
+.impeccable/
+.serena/
+skills-lock.json
+
+# Editor/OS cruft
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# Build/test output that shouldn't ship with a static site
+.dist/
+dist/
+build/
+node_modules/
+.playwright-mcp/
+*.log
